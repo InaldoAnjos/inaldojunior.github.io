@@ -1,0 +1,376 @@
+/*
+GERAL
+*/
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: #011627;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+
+}
+
+.botao {
+	color: #FDFFFC;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #FF9F1C;
+	font-size: .9em;
+	border-radius: 5px;
+}
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #011627;
+}
+
+nav > a {
+	text-decoration: none;
+	color: #FDFFFC;
+	font-weight: 700;
+	font-size: 28px;
+	font-family: Pacifico, serif;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li {
+	text-align: center;
+	width: 100%;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 80%;
+	text-decoration: none;
+	color: #FDFFFC;
+}
+
+/*
+CABEÇALHO
+*/
+
+header {
+	background-image: url('img/intel_i7_inspired.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #011627;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	padding: 20px;
+}
+
+header p {
+	margin-bottom: 2em;
+	font-size: 20px;
+	color: #011627;
+}
+
+header h1 {
+	font-family: Pacifico;
+	color: #011627;
+}
+
+/*
+SOBRE
+*/
+
+#Introdução {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	padding: 20px 20px 20px;
+	background-color: #FFA730;
+	color: #0A1228;
+}
+
+#Introdução p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
+#Introdução .botao {
+	background-color: #FDFFFC;
+	color: #011627;
+}
+
+/*
+SERVIÇOS
+*/
+
+#Contexto {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #011627;
+	background-color: #5BC0BE;
+}
+
+#Contexto div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	margin-top: 30px;
+}
+
+#Contexto img {
+	max-width: 120px;
+	max-height: 96px;
+	width: auto;
+	height: auto;
+}
+
+/*
+PORTFOLIO
+*/
+
+#John {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #0B132B;
+	background-color: #3878A0;
+}
+
+#John h2 {
+	margin-bottom: 20px;
+}
+
+#John div {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	text-align: justify;
+	margin-top: 30px;
+}
+
+#John ol {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	text-align: left;
+}
+
+#John img {
+	max-width: auto;
+	max-height: auto;
+	width: auto;
+	height: auto;
+	align-items: center; 
+}
+
+/*
+CONTATO
+*/
+
+#Gargalo {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #A6C3D5;
+	background-color: #0B132B;
+}
+
+#Gargalo h2 {
+	margin-bottom: 20px;
+}
+
+#Gargalo div {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	text-align: justify;
+	margin-top: 30px;
+}
+
+/*
+HAVARD
+*/
+#Havard {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #C1C3CB;
+	background-color: #1C2541;
+}
+
+#Havard h2 {
+	margin-bottom: 20px;
+}
+
+#Havard div {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	text-align: justify;
+	margin-top: 30px;
+}
+
+/*
+CONCLUSÃO
+*/
+
+#Conclusão {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #011627;
+}
+
+#Conclusão h2 {
+	margin-bottom: 20px;
+}
+
+#Conclusão div {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	text-align: justify;
+	margin-top: 30px;
+}
+
+
+/*
+FOOTER
+*/
+
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #3EA545;
+	color: #FDFFFC;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 768px) {
+	/*
+	NAVEGAÇÃO
+	*/
+
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav ul {
+		flex-direction: row;
+		width: 70%;
+	}
+
+	/*
+	CABEÇALHO
+	*/
+	
+	header {
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+	}
+
+	/*
+	SOBRE
+	*/
+
+	#sobre {
+		height: 250px;
+		height: 40vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+
+	/*
+	SERVIÇOS
+	*/
+
+	#servicos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	#servicos h2 {
+		text-align: center;
+		width: 100%;
+	}
+
+	#servicos div {
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+
+	/*
+	PORTFOLIO
+	*/
+
+	#portfolio {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#portfolio h2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#portfolio img {
+		width: 100%;
+	}
+
+	/*
+	CONTATO
+	*/
+
+	#contato {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	#contato h2,
+	#contato p {
+		width: 100%;
+	}
+
+	#contato img {
+		width: 100%;
+	}
+}
