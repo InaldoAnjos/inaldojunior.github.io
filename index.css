@@ -51,6 +51,8 @@ nav ul {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	font-family: PT Sans Narrow;
+	font-size: 16px;
 }
 
 nav ul li {
@@ -85,12 +87,13 @@ header {
 
 header p {
 	margin-bottom: 2em;
-	font-size: 20px;
+	font-size: 28px;
 	color: #011627;
 }
 
 header h1 {
 	font-family: Pacifico;
+	font-size: 50px;
 	color: #011627;
 }
 
@@ -123,12 +126,13 @@ SERVIÇOS
 */
 
 #Contexto {
-	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	color: #011627;
+	align-items: center;	
+	text-align: justify;
+	padding: 20px 20px 20px;
 	background-color: #5BC0BE;
+	color: #011627;
 }
 
 #Contexto div {
@@ -146,15 +150,21 @@ SERVIÇOS
 	height: auto;
 }
 
+#Contexto p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
 /*
 PORTFOLIO
 */
 
 #John {
-	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: center;	
+	text-align: justify;
+	padding: 20px 20px 20px;
 	color: #0B132B;
 	background-color: #3878A0;
 }
@@ -166,7 +176,7 @@ PORTFOLIO
 #John div {
 	display: flex;
 	flex-direction: column;
-	align-items: left;
+	align-items: center;
 	text-align: justify;
 	margin-top: 30px;
 }
@@ -180,11 +190,17 @@ PORTFOLIO
 }
 
 #John img {
-	max-width: auto;
-	max-height: auto;
-	width: auto;
-	height: auto;
+	padding: 10px;
+	max-width: 560px;
+	max-height: 480px;
+	width: 480px;
+	height: 420	px;
 	align-items: center; 
+}
+
+#John p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
 }
 
 /*
@@ -212,6 +228,11 @@ CONTATO
 	margin-top: 30px;
 }
 
+#Gargalo p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
 /*
 HAVARD
 */
@@ -234,6 +255,11 @@ HAVARD
 	align-items: left;
 	text-align: justify;
 	margin-top: 30px;
+}
+
+#Havard p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
 }
 
 /*
@@ -260,6 +286,43 @@ CONCLUSÃO
 	margin-top: 30px;
 }
 
+#Conclusão p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
+/*
+REFERÊNCIAS
+*/
+
+#Referências {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;	
+	color: #010027;
+	background-color: #FA7921;
+}
+
+#Referências h2 {
+	margin-bottom: 20px;
+	align-items: center;
+	text-align: center;
+}
+
+#Referências div {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	text-align: justify;
+	margin-top: 30px;
+}
+
+#Referências p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+	text-align: left;
+	padding-left: 140px;
+}
 
 /*
 FOOTER
@@ -305,7 +368,7 @@ MEDIA QUERIES
 	SOBRE
 	*/
 
-	#sobre {
+	#Introdução {
 		height: 250px;
 		height: 40vh;
 		justify-content: center;
@@ -316,12 +379,11 @@ MEDIA QUERIES
 	SERVIÇOS
 	*/
 
-	#servicos {
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		max-width: 1000px;
-		margin: 0 auto;
+	#Contexto {
+		height: 200px;
+		height: 40vh;
+		justify-content: center;
+		min-height: 200px;
 	}
 
 	#servicos h2 {
