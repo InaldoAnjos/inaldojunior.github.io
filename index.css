@@ -52,7 +52,7 @@ nav ul {
 	align-items: center;
 	width: 100%;
 	font-family: PT Sans Narrow;
-	font-size: 16px;
+	font-size: 16	px;
 }
 
 nav ul li {
@@ -178,15 +178,15 @@ PORTFOLIO
 	flex-direction: column;
 	align-items: center;
 	text-align: justify;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
-#John ol {
-	padding: 20px;
+#John ul {
+	padding: 0px 0px 0px 0px;
 	display: flex;
 	flex-direction: column;
 	align-items: left;
-	text-align: left;
+	text-align: justify;
 }
 
 #John img {
@@ -203,17 +203,26 @@ PORTFOLIO
 	max-width: 1000px;
 }
 
+#topic div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	margin-top: -40px;
+}
+
 /*
 CONTATO
 */
 
 #Gargalo {
-	padding: 20px;
+	padding: 20px 20px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	color: #A6C3D5;
 	background-color: #0B132B;
+	text-align: justify;
 }
 
 #Gargalo h2 {
@@ -236,20 +245,21 @@ CONTATO
 /*
 HAVARD
 */
-#Havard {
-	padding: 20px;
+#Harvard {
+	padding: 20px 20px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: justify;
 	color: #C1C3CB;
 	background-color: #1C2541;
 }
 
-#Havard h2 {
+#Harvard h2 {
 	margin-bottom: 20px;
 }
 
-#Havard div {
+#Harvard div {
 	display: flex;
 	flex-direction: column;
 	align-items: left;
@@ -257,7 +267,7 @@ HAVARD
 	margin-top: 30px;
 }
 
-#Havard p {
+#Harvard p {
 	margin-bottom: 2.5em;
 	max-width: 1000px;
 }
@@ -267,10 +277,11 @@ CONCLUSÃO
 */
 
 #Conclusão {
-	padding: 20px;
+	padding: 20px 20px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: justify;
 	color: #011627;
 }
 

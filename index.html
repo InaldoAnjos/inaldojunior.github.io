@@ -15,19 +15,19 @@
 			<li><a href="#Contexto">Contexto Histórico</a></li>
 			<li><a href="#John">John von Neumann</a></li>
 			<li><a href="#Gargalo">Gargalo de von Neumann</a></li>
-			<li><a href="#Havard">Havard</a></li>
+			<li><a href="#Harvard">Harvard</a></li>
 			<li><a href="#Conclusão">Conclusão</a></li>
 		</ul>
 	</nav>
 
 	<header>
 		<h1>OAC</h1>
-		<p>Resenha em torno das arquiteturas de <em>John von Neumann</em> e <em>Havard</em></p>
+		<p>Resenha em torno das arquiteturas de <em>John von Neumann</em> e <em>Harvard</em></p>
 	</header>
 
 	<section id="Introdução">
 		<h2>Introdução</h2>
-		<p>Os computadores são muito mais do que aparelhos que se vê hoje em dia em cima de bancadas de escritórios. Se for analisado o propósito no qual essa máquina foi criada, existem muitos vieses que podem-se seguir, desde o processo de automatizar os cálculos relativamente simples, como acontecia na antiguidade, até o surgimento dos computadores digitais na década de 40, de maneira que possa explicar tal criação. Dentre esses vieses, alguns nomes e instituições são de extrema importância para a área da computação, como por exemplo <em>John von Neumann</em> e <em>Universidade de Havard</em>.
+		<p>Os computadores são muito mais do que aparelhos que se vê hoje em dia em cima de bancadas de escritórios. Se for analisado o propósito no qual essa máquina foi criada, existem muitos vieses que podem-se seguir, desde o processo de automatizar os cálculos relativamente simples, como acontecia na antiguidade, até o surgimento dos computadores digitais na década de 40, de maneira que possa explicar tal criação. Dentre esses vieses, alguns nomes e instituições são de extrema importância para a área da computação, como por exemplo <em>John von Neumann</em> e <em>Universidade de Harvard</em>.
 	</section>
 
 	<section id="Contexto">
@@ -42,7 +42,18 @@
 
 		<div>
 				<p>Em meados do século XX, <em>John von Neumann</em> deu sua contribuição no projeto e construção do EDVAC (<em>Eletronic Discrete Variable Automatic Computer</em>), um dos primeiros computadores eletrônicos, e o primogênito computador com programa armazenado na memória utilizando então a tão conhecida arquitetura de von Neumann. Antes do EDVAC, as máquinas eram programadas através de cartões, fitas perfuradas e muitos cabos de conexão, no entanto, esses dispositivos tinham fatores limitantes e agravantes, a pouca memória. Durante a concepção do EDVAC a <em>Eckert</em> (<em>Eckert-Mauchly Computer Corporation</em> - EMCC) empresa voltada a construir projetos de novos computadores para aplicações comerciais e militares, propôs a utilização de linhas de atraso para implementação de elementos de memória com custos mais viáveis. Essa concepção se baseava em propagar ordenadamente em tempos regulares e determinados um bit da informação por elementos de memória em um ciclo infinito. Assim a ideia de se armazenar e trabalhar com milhares de bits se tornaram viáveis. Foi a partir de então que houve a possibilidade de armazenar um programa sem utilizar fitas e cartões perfurados. Apesar das controvérsias da criação, foi Neumann quem redigiu um relatório que abrangia a estrutura da máquina projetada. Como sugere o título do relatório <em>First draft of a report on the </em>EDVAC (<em>von Neumann</em>, 1945), o documento nunca passou da fase de rascunho.<br/><br/>
-				No seu relatório Von Neumann desmembra visivelmente o conceito de arquitetura lógica da sua execução física. Ele propôs que a máquina poderia ser dividida em quatro partes ditas visíveis:</p>
+				No seu relatório <em>Von Neumann</em> desmembra visivelmente o conceito de arquitetura lógica da sua execução física. Praticamente todos os projetos de computadores modernos são baseados em conceitos desenvolvidos por <em>John Von Neumann</em> no <em>Institute for Advanced Studies</em>, em Princeton. Esse projeto é conhecido como arquitetura de <em>Von Neumann</em> e é baseado em três conceitos principais:</p>
+				<section id="topic">
+				<div>
+					<ul>
+						<li>Dados e instruções são armazenados em uma única memória de leitura e escrita.</li>
+						<li>O conteúdo dessa memória é endereçável por local, sem considerar o tipo de dados neles contido.</li>
+						<li>A execução ocorre em um padrão sequencial (a menos que modifi cado explicitamente) de uma instrução para a seguinte.</li>
+					</ul>	
+				</div>
+				<p>Ele propôs que a máquina poderia ser dividida em quatro partes ditas visíveis:</p>	
+				</section>
+
 				<section id="image">
 					<div>
 					<img src="img/VonNeumannArch.png" alt="VonNeumann">
@@ -70,11 +81,13 @@
 		<p>O barramento compartilhado entre a memória do programa e a memória de dados leva ao gargalo de <em>von Neumann</em>, o rendimento limitado (taxa de transferência de dados) entre a unidade de processamento central (CPU) e a memória em comparação com a quantidade de memória. Como o único barramento só pode acessar uma das duas classes de memória por vez, a taxa de transferência é menor do que a taxa na qual a CPU pode funcionar. Isso limita seriamente a velocidade de processamento efetiva quando a CPU é necessária para executar um processamento mínimo em grandes quantidades de dados. </p>
 	</section>
 
-	<section id="Havard">
-		<h2><em>Havard</em></h2>
+	<section id="Harvard">
+		<h2><em>Harvard</em></h2>
 		<p>Harvard é muito parecido com <em>von Neumann</em>, exceto que você possui espaço de memória separado para dados e instruções. A arquitetura de <em>Harvard</em> foi desenvolvida para lidar com o problema do acesso limitado à memória pela CPU e o reconhecimento de que, em geral, o programa e os dados estavam muitas vezes em áreas separadas da memória. Dado isso, pôde-se projetar um computador com uma memória separada para cada uma dessas áreas, bem como um barramento separado para essas memórias separadas. Se fossem separados para um melhor tráfego de dados e desempenho de acesso, eles poderiam ser ainda otimizados para diferentes tamanhos de dados e programas armazenados.<br/><br/>
 		A principal vantagem dessa arquitetura é que a leitura de instruções e de alguns tipos de operandos pode ser feita ao mesmo tempo em que a execução das instruções. Isso significa que o sistema fica menos ocioso, ou seja, a Unidade Central de Processamento (CPU),ou seja, ela ficará um tempo maior executando instruções, o que acarreta um significativo ganho de velocidade. Enquanto uma instrução está sendo executada, a seguinte está sendo lida. Esse processo é conhecido como <em>pipelining</em> (canalização).<br/><br/>
 		Arquiteturas de <em>Harvard</em> são comumente usadas em <em>Specializeds Digital Signal</em> – DSP, normalmente por produtos de áudio e vídeo de transformação. Ele também é usado em muitos pequenos microcontroladores utilizados em aplicações eletrônicas, tais como os processadores, PIC e ARM (<em>Advanced RISC Machines</em>).</p>
+		<h2>Arquitetura de <em>Harvard</em> modificada</h2>
+		<p>Pode-se dizer que essa <em>"nova"</em> arquiterura, nada mais é que uma variação da Arquitetura de <em>Harvard</em>, a qual possibilita que o conteúdo da memória de programa seja acionado como se fosse memória de dados. Esta é então a principal diferença entre as duas arquiteturas. Um aspecto interessante, é que quase todos os computadores pessoais modernos possuem Arquitetura de <em>Harvard</em> Modificada.<br/> Os principais exemplos dessa arquiterura são: o acesso a leitura e gravação, a primeira permite que os valores dados iniciais podem ser copiados da memória de instruções para a memória de dados quando um programa é iniciado. Já a segunda possibilita que tenham capacidade de reprogramar, deixando de lado o conceito de ter apenas a memória (ROM) para armazenamento dos programas.</p>
 	</section>
 
 	<section id="Conclusão">
